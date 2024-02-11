@@ -92,6 +92,13 @@ header {
   color: #fff;
 }
 
+.num-display {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+  }
+
+  
 [type='radio'] {
   opacity: 0;
 }
@@ -126,11 +133,6 @@ input:focus {
   align-items: center;
 }
 
-.num-display {
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-}
 
 .close,
 .edit {
@@ -185,13 +187,14 @@ input:focus {
   text-align: center;
   color: rebeccapurple;
 }
-
+.sameLineFlex {
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Adjust as needed: space-between, space-around, etc. */
+  align-items: center; /* Align items vertically in the center */
+}
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
  * document */
-.about-link {
-  display: flex;
-  justify-content: flex-end;
-}
+
 
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
  * document */
@@ -201,6 +204,18 @@ input:focus {
 }
 
 .about-link a:hover {
+  color: #ff6a95;
+}
+
+
+/* FIX: Remove position: absolute to keep about icon at the bottom of the
+ * document */
+.contact-link a {
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-link a:hover {
   color: #ff6a95;
 }
 
